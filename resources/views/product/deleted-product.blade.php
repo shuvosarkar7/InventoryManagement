@@ -116,11 +116,11 @@
                             </td>
                             <td class="text-center">Laptop</td>
                             <td class="text-center">
-                                <div class="badge badge-warning">Pending</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -142,11 +142,11 @@
                             </td>
                             <td class="text-center">Laptop</td>
                             <td class="text-center">
-                                <div class="badge badge-success">Running</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -168,11 +168,11 @@
                             </td>
                             <td class="text-center">Laptop</td>
                             <td class="text-center">
-                                <div class="badge badge-danger">Stock Out</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -194,11 +194,11 @@
                             </td>
                             <td class="text-center">Laptop</td>
                             <td class="text-center">
-                                <div class="badge badge-info">On Hold</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                     </tbody>

@@ -6,22 +6,23 @@ use Illuminate\Http\Request;
 
 class Product extends Controller
 {
-    public  function productType(){
-        return view('product.product_type');
+    public  function product(){
+        return view('index');
     }
+    public  function addProduct(){
+        return view('product.add-product');
+    }
+    public  function deletedProduct(){
+        return view('product.deleted-product');
+    }
+
     public  function category(){
         return view('product.category');
     }
-    public  function product(){
-        return view('product.product');
+    public  function addCategory(){
+        return view('product.add-category');
     }
-    public  function productSize(){
-        return view('product.product_size');
-    }
-    public  function productUnit(){
-        return view('product.product_unit');
-    }
-    public  function stock(){
-        return view('stock.stock');
+    public  function deletedCategory(){
+        return view('product.deleted-category');
     }
 }

@@ -19,18 +19,21 @@ use App\Http\Controllers\Sale;
 
 
 
-
+// home page
 Route::get('/',[HomeController::class,'index']);
-
-Route::get('/product/productType',[Product::class,'productType']);
-Route::get('/product/category',[Product::class,'category']);
-Route::get('/product',[Product::class,'product']);
-Route::get('/product/productSize',[Product::class,'productSize']);
-Route::get('/product/productUnit',[Product::class,'productUnit']);
-Route::get('/product/stock',[Product::class,'stock']);
-
-Route::get('/purchase/order',[Purchase::class,'order']);
-Route::get('/purchase/orderItem',[Purchase::class,'order_item']);
-
-Route::get('/sale/order',[Sale::class,'order']);
-Route::get('/sale/orderItem',[Sale::class,'order_item']);
+// product page
+Route::get('/product',[Product::class,'product'])->name('product');
+Route::get('/product/addProduct',[Product::class,'addProduct'])->name('add.product');
+Route::get('/product/deletedProduct',[Product::class,'deletedProduct'])->name('deleted.product');
+// category pages
+Route::get('/product/category',[Product::class,'category'])->name('category');
+Route::get('/product/addCategory',[Product::class,'addCategory'])->name('add.category');
+Route::get('/product/deletedCategory',[Product::class,'deletedCategory'])->name('deleted.category');
+// purchase pages
+Route::get('/purchase',[Purchase::class,'purchase'])->name('purchase');
+Route::get('/purchase/addPurchase',[Purchase::class,'addPurchase'])->name('add.purchase');
+Route::get('/purchase/deletedPurchase',[Purchase::class,'deletedPurchase'])->name('deleted.purchase');
+// sales pages
+Route::get('/sale',[Sale::class,'sale'])->name('sale');
+Route::get('/sale/addSales',[Sale::class,'addSales'])->name('add.sales');
+Route::get('/sale/deletedSales',[Sale::class,'deletedSales'])->name('deleted.sales');

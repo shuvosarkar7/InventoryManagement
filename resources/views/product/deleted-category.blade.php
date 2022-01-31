@@ -91,7 +91,6 @@
                         <tr>
                             <th class="text-center">#</th>
                             <th>Product Name</th>
-                            <th class="text-center">Category</th>
                             <th class="text-center">Status</th>
                             <th class="text-center">Actions</th>
                         </tr>
@@ -102,25 +101,21 @@
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
+                                        
                                         <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
+                                            <div class="widget-heading">Category 1</div>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center">Laptop</td>
+                            
                             <td class="text-center">
-                                <div class="badge badge-warning">Pending</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -128,25 +123,20 @@
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
+                                        
                                         <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
+                                            <div class="widget-heading">Category 2</div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center">Laptop</td>
+                            
                             <td class="text-center">
-                                <div class="badge badge-success">Running</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -154,25 +144,20 @@
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
+                                        
                                         <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
+                                            <div class="widget-danger">Category 3</div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center">Laptop</td>
+                            
                             <td class="text-center">
-                                <div class="badge badge-danger">Stock Out</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                         <tr>
@@ -180,25 +165,19 @@
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
                                         <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
+                                            <div class="widget-heading">Category 4</div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center">Laptop</td>
+                            
                             <td class="text-center">
-                                <div class="badge badge-info">On Hold</div>
+                                <div class="badge badge-danger">Deleted</div>
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="button" id="PopoverCustomT-4" class="btn btn-info btn-sm">Details</button>
                             </td>
                         </tr>
                     </tbody>

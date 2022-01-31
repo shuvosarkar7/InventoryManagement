@@ -6,7 +6,7 @@
             <div class="widget-content-outer">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Total Product</div>
+                        <div class="widget-heading">Total Sales</div>
                         <div class="widget-subheading">Last year expenses</div>
                     </div>
                     <div class="widget-content-right">
@@ -21,7 +21,7 @@
             <div class="widget-content-outer">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Products Sold</div>
+                        <div class="widget-heading">Sales Sold</div>
                         <div class="widget-subheading">Revenue streams</div>
                     </div>
                     <div class="widget-content-right">
@@ -77,7 +77,7 @@
     <div class="col-md-12">
         <div class="main-card mb-3 card">
             <div class="card-header">
-                All Products
+                All Saless
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
                         <button class="active btn btn-focus">Last Week</button>
@@ -90,7 +90,7 @@
                     <thead>
                         <tr>
                             <th class="text-center">#</th>
-                            <th>Product Name</th>
+                            <th>Sales Name</th>
                             <th class="text-center">Category</th>
                             <th class="text-center">Status</th>
                             <th class="text-center">Actions</th>

@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 class Purchase extends Controller
 {
-    public  function order(){
-        return view('purchase.order');
+    public  function purchase(){
+        return view('purchase.purchase');
     }
-    public  function order_item(){
-        return view('purchase.order_item');
+    public  function addPurchase(){
+        return view('purchase.add-purchase');
+    }
+    public  function deletedPurchase(){
+        return view('purchase.deleted-purchase');
     }
     
 }
