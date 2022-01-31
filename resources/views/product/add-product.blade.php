@@ -3,7 +3,7 @@
 <div class="main-card mb-3 card">
     <div class="card-body">
         <h5 class="card-title">Controls Types</h5>
-        {!! Form::open(['method' => 'POST', 'url' => 'product', 'class' => 'form-horizontal']) !!}
+        <form action="" method="POST">
         @csrf
             <div class="position-relative form-group"><label for="name" class="">Name</label><input name="text" id="name" placeholder="Enter Name" type="text" class="form-control" /></div>
             <div class="position-relative form-group">
@@ -28,7 +28,7 @@
             </div>
             <div class="position-relative form-group"><label for="description" class="">Description</label><textarea name="text" id="description" class="form-control"></textarea></div>
             <button class="mt-1 btn btn-primary">Add New Product</button>
-        {!! Form::close() !!}
+        </form>
     </div>
 </div>
 @endsection
