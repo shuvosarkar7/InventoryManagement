@@ -3,12 +3,21 @@
 <div class="main-card mb-3 card">
     <div class="card-body">
         <h5 class="card-title">Controls Types</h5>
-        <form action="" method="POST">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        <form action="{{ Route('add.action.product') }}" method="POST">
         @csrf
-            <div class="position-relative form-group"><label for="name" class="">Name</label><input name="text" id="name" placeholder="Enter Name" type="text" class="form-control" /></div>
+            <div class="position-relative form-group"><label for="name" class="">Name</label><input name="name" id="name" placeholder="Enter Name" type="text" class="form-control" /></div>
             <div class="position-relative form-group">
-                <label for="ProductType" class="">Product Type</label>
-                <select name="select" id="ProductType" class="form-control">
+                <label for="product_type" class="">Product Type</label>
+                <select name="product_type" id="product_type" class="form-control">
                     <option value="1">Product type 1</option>
                     <option value="1">Product type 2</option>
                     <option value="1">Product type 3</option>
@@ -18,15 +27,14 @@
             </div>
             <div class="position-relative form-group">
                 <label for="Productcategory" class="">Product Category</label>
-                <select name="select" id="Productcategory" class="form-control">
-                    <option value="1">Product category 1</option>
-                    <option value="1">Product category 2</option>
-                    <option value="1">Product category 3</option>
-                    <option value="1">Product category 4</option>
-                    <option value="1">Product category 5</option>
+                <select name="category" id="Productcategory" class="form-control">
+                    @foreach($data as $key => $catList)
+                    <option value="{{ $catList->id }}">{{ $catList->category_name }}</option>
+                    @endforeach
                 </select>
             </div>
-            <div class="position-relative form-group"><label for="description" class="">Description</label><textarea name="text" id="description" class="form-control"></textarea></div>
+            <div class="position-relative form-group"><label for="price" class="">Price</label><input name="price" id="price" placeholder="Enter Price" type="text" class="form-control" /></div>
+            <div class="position-relative form-group"><label for="description" class="">Description</label><textarea name="desc" id="description" class="form-control"></textarea></div>
             <button class="mt-1 btn btn-primary">Add New Product</button>
         </form>
     </div>

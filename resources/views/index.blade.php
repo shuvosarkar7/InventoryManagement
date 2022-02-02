@@ -97,110 +97,42 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($product as $key => $products) 
                         <tr>
-                            <td class="text-center text-muted">#345</td>
+                            <td class="text-center text-muted">#{{ $products->id }}</td>
                             <td>
                                 <div class="widget-content p-0">
                                     <div class="widget-content-wrapper">
                                         <div class="widget-content-left mr-3">
                                             <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
+                                                <img width="100" src="{{ $products->image }}" alt="" />
                                             </div>
                                         </div>
                                         <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
+                                            <div class="widget-heading">{{ $products->product_name }}</div>
+                                            <div class="widget-subheading opacity-7">Price : {{ $products->price }} BDT</div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="text-center">Laptop</td>
+                            <td class="text-center">{{ $products->category_id }}</td>
                             <td class="text-center">
-                                <div class="badge badge-warning">Pending</div>
+                                @if( $products->status == 0 )
+                                    <div class="badge badge-warning">Pending</div>
+                                @elseif( $products->status == 1 )
+                                    <div class="badge badge-success">Running</div>
+                                @elseif( $products->status == 2 )
+                                    <div class="badge badge-info">In Hold</div>
+                                @else
+                                    <div class="badge badge-danger">Stoped</div>
+                                @endif
                             </td>
                             <td class="text-center">
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
                                 <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="text-center text-muted">#347</td>
-                            <td>
-                                <div class="widget-content p-0">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-center">Laptop</td>
-                            <td class="text-center">
-                                <div class="badge badge-success">Running</div>
-                            </td>
-                            <td class="text-center">
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center text-muted">#321</td>
-                            <td>
-                                <div class="widget-content p-0">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-center">Laptop</td>
-                            <td class="text-center">
-                                <div class="badge badge-danger">Stock Out</div>
-                            </td>
-                            <td class="text-center">
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center text-muted">#55</td>
-                            <td>
-                                <div class="widget-content p-0">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="widget-content-left">
-                                                <img width="100" src="{{ url('assets/images/product/accer.jpg') }}" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left flex2">
-                                            <div class="widget-heading">Acer Nitro 5 AN515-56 Core i5 11th Gen Laptop</div>
-                                            <div class="widget-subheading opacity-7">Price : 88,000 BDT</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-center">Laptop</td>
-                            <td class="text-center">
-                                <div class="badge badge-info">On Hold</div>
-                            </td>
-                            <td class="text-center">
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-success btn-sm">Update</button>
-                                <button type="button" id="PopoverCustomT-4" class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -3,14 +3,33 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
+use DB;
 
 class Product extends Controller
 {
     public  function product(){
-        return view('index');
+        $product = DB::table('products')
+                    ->orderBy('id','DESC')
+                    ->get();
+        return view('index',compact('product'));
     }
     public  function addProduct(){
-        return view('product.add-product');
+        $data = array();
+        $data = DB::table('category')
+                    ->orderBy('id','DESC')
+                    ->get();
+        return view('product.add-product', compact('data') );
+    }
+    public  function addProductInsert(Request $request){
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'desc' => 'required',
+            'price' => 'required',
+            'category' => 'required',
+            'product_type' => 'required'
+        ]);
+        dd($request->name);
     }
     public  function deletedProduct(){
         return view('product.deleted-product');

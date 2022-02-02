@@ -20,12 +20,16 @@ use App\Http\Controllers\Sale;
 
 
 // home page
-Route::get('/',[HomeController::class,'index']);
+//Route::get('/',[HomeController::class,'index']);
+Route::get('/', function(){
+    return "Index page";
+});
 // product page
 Route::get('/product',[Product::class,'product'])->name('product');
 Route::get('/product/addProduct',[Product::class,'addProduct'])->name('add.product');
+Route::post('/product/addProductInsert',[Product::class,'addProductInsert'])->name('add.action.product');
 Route::get('/product/deletedProduct',[Product::class,'deletedProduct'])->name('deleted.product');
-// category pages
+//category pages
 Route::get('/product/category',[Product::class,'category'])->name('category');
 Route::get('/product/addCategory',[Product::class,'addCategory'])->name('add.category');
 Route::get('/product/deletedCategory',[Product::class,'deletedCategory'])->name('deleted.category');
